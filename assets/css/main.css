@@ -1,0 +1,1584 @@
+@import "../css/variable.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+
+* {
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+span {
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/*                                                   This is header css                                         */
+
+header {
+    background-color: var(--white);
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    box-shadow: 0px 1px 12px var(--light-grey-rgb-236);
+}
+
+header>div {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header div div.bar-icon-wraper {
+    color: var(--black);
+    font-size: var(--f-size-20px);
+    cursor: pointer;
+}
+
+header div div.header-right-icons {
+    display: flex;
+    align-items: center;
+    column-gap: 26px;
+}
+
+header div div.header-right-icons div.icon-wraper {
+    font-size: var(--f-size-20px);
+    color: var(--black);
+    cursor: pointer;
+}
+
+header div div.header-right-icons a.profile-link div.profile-img-wraper {
+    width: 36px;
+    height: 36px;
+}
+
+header div div.header-right-icons a.profile-link div.profile-img-wraper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/*                                                This is main top div css                            */
+
+main>div.main-top {
+    background-color: var(--white-blue);
+    background-image: url("../img/waves.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10px;
+}
+
+main>div.main-top div.container ul.top-list {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 0px;
+    overflow-x: scroll;
+}
+
+main>div.main-top div.container ul.top-list::-webkit-scrollbar {
+    display: none;
+}
+
+main>div.main-top div.container ul.top-list li:nth-child(1) span {
+    text-transform: uppercase;
+}
+
+main>div.main-top div.container ul.top-list li:nth-child(2) span {
+    text-transform: uppercase;
+}
+
+main>div.main-top div.container ul.top-list li span {
+    color: var(--black);
+    font-size: var(--f-size-14px);
+    text-transform: capitalize;
+    padding: 8px 12px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+main>div.main-top div.container ul.top-list li span:hover {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+main>div.main-top div.container ul.top-list li:nth-child(4) span {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+/*                                                 This is main top bottom list                             */
+
+main>div.main-top div.container ul.buttom-list {
+    padding: 0px 12px 30px 12px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    overflow-x: scroll;
+}
+
+main>div.main-top div.container ul.buttom-list::-webkit-scrollbar {
+    display: none;
+}
+
+main>div.main-top div.container ul.buttom-list li {
+    border-radius: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--light-grey-rgb-216);
+    padding: 6px;
+}
+
+main>div.main-top div.container ul.buttom-list li>div.for-tab4 {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+main>div.main-top div.container ul.buttom-list li div.down-aerow-wraper {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: var(--white-red-ff);
+    font-size: var(--f-size-14px);
+    color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>div.main-top div.container ul.buttom-list li div.down-aerow-wraper span.value {
+    display: none;
+}
+
+main>div.main-top div.container ul.buttom-list li div.text span {
+    font-size: var(--f-size-14px);
+    display: block;
+}
+
+main>div.main-top div.container ul.buttom-list li div.text span:nth-child(1) {
+    font-weight: 600;
+}
+
+main>div.main-top div.container ul.buttom-list li div.down-value span {
+    font-size: var(--f-size-14px);
+    display: flex;
+    justify-content: end;
+    color: var(--red);
+}
+
+main>div.main-top div.container ul.buttom-list li div.down-value span:nth-child(1) {
+    font-weight: 600;
+}
+
+main>div.main-top div.container ul.buttom-list li div.up-value span:nth-child(1) {
+    font-weight: 600;
+}
+
+main>div.main-top div.container ul.buttom-list li div.up-aerow-wraper {
+    width: 34px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: var(--light-green);
+    font-size: var(--f-size-14px);
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main>div.main-top div.container ul.buttom-list li div.up-aerow-wraper span.value {
+    display: none;
+}
+
+main>div.main-top div.container ul.buttom-list li div.up-value span {
+    font-size: var(--f-size-14px);
+    display: flex;
+    justify-content: end;
+    color: var(--green);
+}
+
+/*                                              This is search bar css                               */
+
+main>div.main-top div.container div.search-bar {
+    width: 550px;
+    height: 60px;
+    border-radius: 30px;
+    background-color: var(--white);
+    box-shadow: 0px 2px 14px var(--light-grey-rgb-216);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+main>div.main-top div.container div.search-bar input {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 0px 16px;
+    border: none;
+    font-size: var(--f-size-16px);
+}
+
+main>div.main-top div.container div.search-bar input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+main>div.main-top div.container div.search-bar div.search-icon-wraper {
+    font-size: var(--f-size-18px);
+    color: var(--dark-grey-99);
+}
+
+/*                                                   This is section 1 css                                   */
+section.section-one {
+    margin: 40px 0px;
+}
+
+section.section-one div.container {
+    display: flex;
+    column-gap: 20px;
+}
+
+section.section-one div.container div.left-child {
+    width: 100%;
+}
+
+section.section-one div.container div.left-child div.left-child-top>h3 {
+    font-size: var(--f-size-20px);
+    font-weight: 500;
+    margin: 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--light-grey-rgb-216);
+}
+
+section.section-one div.container div.left-child div.left-child-top>div {
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--light-grey-rgb-216);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.section-one div.container div.left-child div.left-child-top>div div:first-of-type {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+section.section-one div.container div.left-child div.left-child-top>div div:first-of-type span:first-of-type {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--white);
+    background-color: var(--blue-rgb-1);
+    font-size: var(--f-size-14px);
+    padding: 5px 0px;
+    border-radius: 6px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+section.section-one div.container div.left-child div.left-child-top>div div span:nth-child(2) {
+    font-size: var(--f-size-14px);
+    text-transform: capitalize;
+    font-weight: 600;
+    width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section.section-one div.container div.left-child div.left-child-top>div div:nth-child(2) span:first-of-type {
+    font-size: var(--f-size-16px);
+    font-weight: 600;
+    color: var(--black);
+    margin-right: 50px;
+}
+
+section.section-one div.container div.left-child div.left-child-top>div div:nth-child(2) span:nth-child(2) {
+    color: var(--green);
+    font-size: var(--f-size-16px);
+    font-weight: 600;
+    margin-right: 30px;
+}
+
+section.section-one div.container div.left-child div.left-child-top>div div:nth-child(2) span:nth-child(3) {
+    color: var(--green);
+    font-size: var(--f-size-16px);
+    font-weight: 600;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: var(--light-green);
+    border-radius: 8px;
+}
+
+section.section-one div.container div.left-child div.left-child-top>div div:nth-child(2) span.plus-icon-wraper {
+    font-size: var(--f-size-14px);
+    color: var(--dark-grey-99);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--dark-grey-99);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* this is nth-child 3  */
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(3) div:nth-child(1) span:nth-child(1) {
+    background-color: var(--red);
+}
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(3) div:nth-child(2) span:nth-child(2) {
+    color: var(--red);
+}
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(3) div:nth-child(2) span:nth-child(3) {
+    color: var(--red);
+    background-color: var(--white-red-ff);
+}
+
+/* this is nth-child 4  */
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(4) div:nth-child(1) span:nth-child(1) {
+    background-color: var(--dark-blue-rgb-3);
+}
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(4) div:nth-child(2) span:nth-child(2) {
+    color: var(--red);
+
+}
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(4) div:nth-child(2) span:nth-child(3) {
+    color: var(--red);
+    background-color: var(--white-red-ff);
+}
+
+/* this is nth-child 5  */
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(5) div:nth-child(1) span:nth-child(1) {
+    background-color: var(--dark-blue-rgb-7);
+}
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(5) div:nth-child(2) span:nth-child(2) {
+    color: var(--red);
+
+}
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(5) div:nth-child(2) span:nth-child(3) {
+    color: var(--red);
+    background-color: var(--white-red-ff);
+}
+
+/* this is nth-child 6  */
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(6) div:nth-child(1) span:nth-child(1) {
+    background-color: var(--red-rgb-255);
+}
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(6) div:nth-child(2) span:nth-child(2) {
+    color: var(--red);
+
+}
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(6) div:nth-child(2) span:nth-child(3) {
+    color: var(--red);
+    background-color: var(--white-red-ff);
+}
+
+/* this is nth-child 7  */
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(7) div:nth-child(1) span:nth-child(1) {
+    background-color: var(--blue-rgb-17);
+}
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(7) div:nth-child(2) span:nth-child(2) {
+    color: var(--red);
+
+}
+
+section.section-one div.container div.left-child div.left-child-top>div:nth-child(7) div:nth-child(2) span:nth-child(3) {
+    color: var(--red);
+    background-color: var(--white-red-ff);
+}
+
+/*                                    Your watch lists                                              */
+
+section.section-one div.container div.left-child div.left-child-watch-list>h4 {
+    text-transform: uppercase;
+    font-size: var(--f-size-14px);
+}
+
+section.section-one div.container div.left-child div.left-child-watch-list>div {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin-bottom: 35px;
+}
+
+section.section-one div.container div.left-child div.left-child-watch-list>div>div:first-of-type {
+    border-radius: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--light-grey-rgb-216);
+    padding: 8px 12px 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+section.section-one div.container div.left-child div.left-child-watch-list>div>div>div {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+section.section-one div.container div.left-child div.left-child-watch-list>div>div>div span.bars-icon-wraper {
+    font-size: var(--f-size-16px);
+    color: var(--black);
+    background-color: var(--white-blue);
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.section-one div.container div.left-child div.left-child-watch-list>div>div>div span:nth-child(2) {
+    font-size: var(--f-size-14px);
+    text-transform: capitalize;
+}
+
+section.section-one div.container div.left-child div.left-child-watch-list>div>div span.plus-icon-wraper {
+    color: var(--blue-rgb-1);
+    font-size: var(--f-size-14px);
+    margin-right: 6px;
+}
+
+section.section-one div.container div.left-child div.left-child-watch-list>div>div:nth-child(2) span:nth-child(2) {
+    color: var(--blue-rgb-1);
+    font-size: var(--f-size-14px);
+}
+
+/*                                    This is left child news css                                              */
+
+section.section-one div.container div.left-child div.left-child-news>h3 {
+    font-size: var(--f-size-20px);
+    font-weight: 500;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+section.section-one div.container div.left-child div.left-child-news>ul {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    border-bottom: 1px solid var(--light-grey-rgb-216);
+    padding-bottom: 14px;
+    overflow-x: scroll;
+}
+
+section.section-one div.container div.left-child div.left-child-news>ul::-webkit-scrollbar {
+    display: none;
+}
+
+section.section-one div.container div.left-child div.left-child-news>ul>li:nth-child(1) {
+    border: none;
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+section.section-one div.container div.left-child div.left-child-news>ul>li {
+    color: var(--black);
+    font-size: var(--f-size-14px);
+    padding: 8px 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    border: 1px solid var(--light-grey-rgb-216);
+}
+
+section.section-one div.container div.left-child div.left-child-news>ul>li:hover {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+section.section-one div.container div.left-child div.left-child-news div.news-post {
+    padding: 16px 0px;
+    border-bottom: 1px solid var(--light-grey-rgb-216);
+    display: flex;
+    justify-content: space-between;
+}
+
+section.section-one div.container div.left-child div.left-child-news div.news-post div.text-wraper>div {
+    color: var(--dark-grey-99);
+    font-size: var(--f-size-12px);
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 20px;
+}
+
+section.section-one div.container div.left-child div.left-child-news div.news-post div.text-wraper>div span:nth-child(1) {
+    font-weight: 600;
+}
+
+
+section.section-one div.container div.left-child div.left-child-news div.news-post div.text-wraper>div span:nth-child(2) {
+    background-color: var(--dark-grey-99);
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+}
+
+section.section-one div.container div.left-child div.left-child-news div.news-post div.text-wraper>h3 {
+    font-size: var(--f-size-18px);
+    font-weight: 500;
+    margin: 0px;
+}
+
+section.section-one div.container div.left-child div.left-child-news div.news-post div.image-wraper {
+    width: 150px;
+    height: 100px;
+}
+
+section.section-one div.container div.left-child div.left-child-news div.news-post div.image-wraper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/*                                        This is section right child css                                   */
+
+section.section-one div.container div.right-child {
+    width: 600px;
+}
+
+section.section-one div.container div.right-child>div {
+    padding: 20px;
+    border: 1px solid var(--light-grey-rgb-216);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+section.section-one div.container div.right-child div.new-portfolio>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+section.section-one div.container div.right-child div.new-portfolio>div span.chart-icon-wraper {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+    width: 34px;
+    height: 34px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.section-one div.container div.right-child div.new-portfolio>div span.text-wraper {
+    font-size: var(--f-size-14px);
+}
+
+section.section-one div.container div.right-child div.new-portfolio a.btn {
+    font-size: var(--f-size-14px);
+    border: 1px solid var(--light-grey-rgb-216);
+    border-radius: 20px;
+    padding: 10px;
+    color: var(--blue-rgb-0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 8px;
+    margin-top: 10px;
+}
+
+/*                This is market trends css                         */
+
+section.section-one div.container div.right-child div.market-trends>h3 {
+    font-size: var(--f-size-20px);
+    font-weight: 500;
+    margin: 0px;
+    padding-bottom: 20px;
+}
+
+section.section-one div.container div.right-child div.market-trends>div div {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    margin-bottom: 10px;
+}
+
+section.section-one div.container div.right-child div.market-trends>div a {
+    border: 1px solid var(--light-grey-rgb-216);
+    border-radius: 20px;
+    padding: 6px 12px;
+    font-size: var(--f-size-14px);
+    color: var(--black-grey);
+}
+
+section.section-one div.container div.right-child div.market-trends>div a span.icon-wraper {
+    color: var(--black);
+}
+
+section.section-one div.container div.right-child div.market-trends>div a:nth-child(2) span.icon-wraper {
+    color: var(--blue-rgb-0);
+}
+
+section.section-one div.container div.right-child div.market-trends>div:nth-child(3) a:nth-child(1) span.icon-wraper {
+    color: var(--green);
+}
+
+section.section-one div.container div.right-child div.market-trends>div:nth-child(3) a:nth-child(2) span.icon-wraper {
+    color: var(--red);
+}
+
+section.section-one div.container div.right-child div.market-trends>div:nth-child(3) a:nth-child(3) span.icon-wraper {
+    color: var(--green);
+}
+
+section.section-one div.container div.right-child div.market-trends>div:nth-child(4) a:nth-child(1) span.icon-wraper {
+    color: var(--gold-rgb-233);
+}
+
+section.section-one div.container div.right-child div.market-trends>div:nth-child(4) a:nth-child(2) span.icon-wraper {
+    color: var(--black);
+}
+
+/*                                     This is earning calender css                                 */
+
+section.section-one div.container div.right-child div.earning-calender h3 {
+    font-size: var(--f-size-20px);
+    font-weight: 500;
+    margin: 0px;
+}
+
+section.section-one div.container div.right-child div.earning-calender h3:nth-child(2) {
+    font-size: var(--f-size-16px);
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--light-grey-rgb-216);
+    color: var(--black-grey);
+
+}
+
+section.section-one div.container div.right-child div.earning-calender>div {
+    border-bottom: 1px solid var(--light-grey-rgb-216);
+    padding: 16px 16px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.section-one div.container div.right-child div.earning-calender>div>div {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+}
+
+section.section-one div.container div.right-child div.earning-calender>div>div div:nth-child(1) {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+    padding: 5px 8px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: var(--f-size-12px);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.section-one div.container div.right-child div.earning-calender>div>div div:nth-child(1) span:nth-child(2) {
+    font-size: var(--f-size-16px);
+    padding-top: 5px;
+}
+
+section.section-one div.container div.right-child div.earning-calender>div>div div:nth-child(2) {
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: var(--f-size-14px);
+}
+
+section.section-one div.container div.right-child div.earning-calender>div>div div:nth-child(2) h3 {
+    font-weight: 500;
+    font-size: var(--f-size-16px);
+}
+
+section.section-one div.container div.right-child div.earning-calender>div>div div:nth-child(2) span {
+    color: var(--black-grey);
+}
+
+section.section-one div.container div.right-child div.earning-calender>div div.icon-wraper {
+    font-size: var(--f-size-20px);
+    color: var(--dark-grey-139);
+}
+
+/*                            This is popular css                                                 */
+
+section.section-one div.container div.right-child div.popular>h3 {
+    font-size: var(--f-size-20px);
+    font-weight: 500;
+    margin: 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--light-grey-rgb-216);
+}
+
+section.section-one div.container div.right-child div.popular>div {
+    border-bottom: 1px solid var(--light-grey-rgb-216);
+    padding: 16px 16px 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.section-one div.container div.right-child div.popular>div>div:nth-child(1) span:nth-child(1) {
+    text-transform: uppercase;
+    font-size: var(--f-size-12px);
+    background-color: var(--grey-rgb-99);
+    width: 60px;
+    padding: 4px 0px;
+    color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+}
+
+section.section-one div.container div.right-child div.popular>div>div:nth-child(1) span:nth-child(2) {
+    text-transform: capitalize;
+    font-size: var(--f-size-14px);
+    font-weight: 600;
+    display: block;
+    padding: 4px 0px;
+}
+
+section.section-one div.container div.right-child div.popular>div>div:nth-child(1) span:nth-child(3) {
+    font-size: var(--f-size-14px);
+    color: var(--black-grey);
+}
+
+section.section-one div.container div.right-child div.popular>div:nth-child(2) div:nth-child(2) span:nth-child(1) {
+    color: var(--green);
+    font-size: var(--f-size-16px);
+    font-weight: 600;
+    margin-right: 10px;
+    padding: 10px;
+    background-color: var(--light-green);
+    border-radius: 8px;
+}
+
+section.section-one div.container div.right-child div.popular>div>div:nth-child(2) span.plus-icon-wraper {
+    font-size: var(--f-size-14px);
+    color: var(--dark-grey-99);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--dark-grey-99);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+section.section-one div.container div.right-child div.popular>div div:nth-child(2) span:nth-child(1) {
+    color: var(--red);
+    background-color: var(--white-red-ff);
+    font-size: var(--f-size-16px);
+    font-weight: 600;
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+section.section-one div.container div.right-child div.popular>div:nth-child(3) div:nth-child(1) span:nth-child(1) {
+    background-color: var(--red);
+}
+
+section.section-one div.container div.right-child div.popular>div:nth-child(4) div:nth-child(1) span:nth-child(1) {
+    background-color: var(--grey-rgb-133);
+}
+
+section.section-one div.container div.right-child div.popular>div:nth-child(5) div:nth-child(1) span:nth-child(1) {
+    background-color: var(--gold-red-201);
+}
+
+section.section-one div.container div.right-child div.popular>div:nth-child(6) div:nth-child(1) span:nth-child(1) {
+    background-color: var(--blue-rgb-1);
+}
+
+section.section-one div.container div.right-child div.popular>div:nth-child(7) div:nth-child(1) span:nth-child(1) {
+    background-color: var(--red);
+}
+
+section.section-one div.container div.right-child div.popular>div:nth-child(7) {
+    border: none;
+    padding-bottom: 0;
+}
+
+/*                                          This section 2 market trends                                        */
+section.market-trends {
+    margin-bottom: 40px;
+}
+
+section.market-trends div.container>h3 {
+    font-size: var(--f-size-20px);
+    font-weight: 500;
+    margin: 0px;
+    padding-bottom: 10px;
+    text-transform: capitalize;
+}
+
+section.market-trends div.container>div {
+    border-bottom: 1px solid var(--light-grey-rgb-216);
+    padding: 8px 0px 12px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+section.market-trends div.container>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+
+}
+
+section.market-trends div.container>div>ul>li:nth-child(1) {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+    border: none;
+}
+
+section.market-trends div.container>div>ul {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+section.market-trends div.container>div>ul>li {
+    color: var(--black);
+    font-size: var(--f-size-14px);
+    padding: 8px 16px;
+    border-radius: 16px;
+    border: 1px solid var(--light-grey-rgb-216);
+    cursor: pointer;
+}
+
+section.market-trends div.container>div>ul>li:hover {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+section.market-trends div.container>div>ul>li:nth-child(2) span.icon-wraper {
+    color: var(--green);
+}
+
+section.market-trends div.container>div>ul>li:nth-child(3) span.icon-wraper {
+    color: var(--red);
+}
+
+section.market-trends div.container>div>a {
+    font-size: var(--f-size-14px);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    color: var(--cian);
+}
+
+section.market-trends div.container>div>div.first-child {
+    display: flex;
+    align-items: center;
+    padding-top: 7px;
+}
+
+section.market-trends div.container>div>div.first-child>span:nth-child(1) {
+    text-transform: uppercase;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: var(--f-size-14px);
+    width: 60px;
+    padding: 4px 0px;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+section.market-trends div.container>div>div.first-child>span:nth-child(2) {
+    text-transform: capitalize;
+    font-size: var(--f-size-14px);
+    font-weight: 600;
+}
+
+section.market-trends div.container>div>div.mid-child {
+    width: 500px;
+    overflow: hidden;
+    font-size: var(--f-size-14px);
+    padding-top: 10px;
+}
+
+section.market-trends div.container>div>div.mid-child span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+section.market-trends div.container>div>div.last-child {
+    display: flex;
+    align-items: center;
+}
+
+section.market-trends div.container>div>div.last-child>span:nth-child(1) {
+    font-size: var(--f-size-16px);
+    font-weight: 600;
+    margin-right: 40px;
+}
+
+section.market-trends div.container>div>div.last-child>div {
+    color: var(--green);
+    font-size: var(--f-size-16px);
+    font-weight: 600;
+    margin-right: 20px;
+    padding: 10px;
+    background-color: var(--light-green);
+    border-radius: 8px;
+}
+
+section.market-trends div.container>div>div.last-child>div span.icon-wraper {
+    margin-right: 6px;
+}
+
+section.market-trends div.container>div>div.last-child>span.plus-icon-wraper {
+    font-size: var(--f-size-14px);
+    color: var(--dark-grey-99);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--dark-grey-99);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+section.market-trends div.container>div:nth-child(4) div.first-child>span:nth-child(1) {
+    background-color: var(--black);
+}
+
+section.market-trends div.container>div:nth-child(5) div.first-child>span:nth-child(1) {
+    background-color: var(--blue-rgb-1);
+}
+
+section.market-trends div.container>div:nth-child(5) div.last-child>div {
+    color: var(--red);
+    background-color: var(--white-red-ff);
+}
+
+section.market-trends div.container>div:nth-child(6) div.first-child>span:nth-child(1) {
+    background-color: var(--black);
+}
+
+section.market-trends div.container>div:nth-child(6) div.last-child>div {
+    color: var(--red);
+    background-color: var(--white-red-ff);
+}
+
+section.market-trends div.container>div:nth-child(7) div.first-child>span:nth-child(1) {
+    background-color: var(--dark-blue-rgb-7);
+}
+
+section.market-trends div.container>div:nth-child(8) div.first-child>span:nth-child(1) {
+    background-color: var(--black);
+}
+
+section.market-trends div.container>div:nth-child(8) div.last-child>div {
+    color: var(--red);
+    background-color: var(--white-red-ff);
+}
+
+/*                                         This is section 4 / discover more                                  */
+
+section.discover-more {
+    background-color: var(--white-blue);
+    padding-top: 30px;
+}
+
+section.discover-more div.container>h3 {
+    font-size: var(--f-size-20px);
+    font-weight: 500;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+section.discover-more div.container>p {
+    font-size: var(--f-size-14px);
+    color: var(--black-grey);
+    margin: 0px;
+}
+
+section.discover-more div.container div.cards-wraper {
+    padding: 20px 0px;
+    border-bottom: 1px solid var(--light-grey-rgb-216);
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    overflow-x: scroll;
+    position: relative;
+}
+section.discover-more div.container div.cards-wraper div.cards-row::-webkit-scrollbar{
+    display: none;
+}
+section.discover-more div.container div.cards-wraper div.cards-row>div {
+    width: 170px;
+    padding: 14px;
+    border: 1px solid var(--light-grey-rgb-216);
+    border-radius: 12px;
+    background-color: var(--white);
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div>span:nth-child(1) {
+    text-transform: uppercase;
+    background-color: var(--blue-rgb-1);
+    color: var(--white);
+    font-size: var(--f-size-14px);
+    width: 60px;
+    padding: 4px 0px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div>span:nth-child(2) {
+    text-transform: capitalize;
+    font-size: var(--f-size-14px);
+    font-weight: 600;
+    margin: 6px 0px 40px 0px;
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div>span:nth-child(3) {
+    text-transform: capitalize;
+    font-size: var(--f-size-16px);
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div>div:nth-child(4) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div>div>div:nth-child(1) {
+    color: var(--red);
+    background-color: var(--white-red-ff);
+    font-size: var(--f-size-16px);
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div>div>div.plus-icon-wraper {
+    font-size: var(--f-size-14px);
+    color: var(--dark-grey-99);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--dark-grey-99);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div:nth-child(2)>span:nth-child(1) {
+    background-color: var(--grey-rgb-133);
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div:nth-child(2)>div>div:nth-child(1) {
+    color: var(--green);
+    background-color: var(--light-green);
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div:nth-child(3)>span:nth-child(1) {
+    background-color: var(--green);
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div:nth-child(3)>div>div:nth-child(1) {
+    color: var(--green);
+    background-color: var(--light-green);
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div:nth-child(4)>span:nth-child(1) {
+    background-color: var(--red);
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div:nth-child(5)>span:nth-child(1) {
+    background-color: var(--red);
+}
+
+section.discover-more div.container div.cards-wraper div.cards-row>div:nth-child(6)>span:nth-child(1) {
+    background-color: var(--dark-blue-rgb-7);
+}
+
+section.discover-more div.container div.cards-wraper>h3 {
+    font-size: var(--f-size-14px);
+    font-weight: 500;
+}
+
+
+
+/*                                     This is top tabs css                                           */
+
+main div.main-top div.container ul.buttom-list>li div.for-tab1 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-1:checked) div.for-tab1 {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+main div.main-top:has(#top-tab-1:checked) .tab1 {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+main div.main-top:has(#top-tab-1:checked) div.for-tab4 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-1:checked) .tab4 {
+    color: var(--black);
+    background-color: transparent;
+}
+
+main div.main-top:has(#top-tab-1:checked) .tab4:hover {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+
+main div.main-top div.container ul.buttom-list>li div.for-tab2 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-2:checked) div.for-tab2 {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+main div.main-top:has(#top-tab-2:checked) .tab2 {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+main div.main-top:has(#top-tab-2:checked) div.for-tab4 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-2:checked) .tab4 {
+    color: var(--black);
+    background-color: transparent;
+}
+
+main div.main-top:has(#top-tab-2:checked) .tab4:hover {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+
+main div.main-top div.container ul.buttom-list>li div.for-tab3 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-3:checked) div.for-tab3 {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+main div.main-top:has(#top-tab-3:checked) .tab3 {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+main div.main-top:has(#top-tab-3:checked) div.for-tab4 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-3:checked) .tab4 {
+    color: var(--black);
+    background-color: transparent;
+}
+
+main div.main-top:has(#top-tab-3:checked) .tab4:hover {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+
+main div.main-top div.container ul.buttom-list>li div.for-tab5 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-5:checked) div.for-tab5 {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+main div.main-top:has(#top-tab-5:checked) .tab5 {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+main div.main-top:has(#top-tab-5:checked) div.for-tab4 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-5:checked) .tab4 {
+    color: var(--black);
+    background-color: transparent;
+}
+
+main div.main-top:has(#top-tab-5:checked) .tab4:hover {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+
+main div.main-top div.container ul.buttom-list>li div.for-tab6 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-6:checked) div.for-tab6 {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+main div.main-top:has(#top-tab-6:checked) .tab6 {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+main div.main-top:has(#top-tab-6:checked) div.for-tab4 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-6:checked) .tab4 {
+    color: var(--black);
+    background-color: transparent;
+}
+
+main div.main-top:has(#top-tab-6:checked) .tab4:hover {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+
+main div.main-top div.container ul.buttom-list>li div.for-tab7 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-7:checked) div.for-tab7 {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+main div.main-top:has(#top-tab-7:checked) .tab7 {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+main div.main-top:has(#top-tab-7:checked) div.for-tab4 {
+    display: none;
+}
+
+main div.main-top:has(#top-tab-7:checked) .tab4 {
+    color: var(--black);
+    background-color: transparent;
+}
+
+main div.main-top:has(#top-tab-7:checked) .tab4:hover {
+    background-color: var(--white-blue-d7);
+    color: var(--cian);
+}
+
+.top-tabs {
+    display: none;
+}
+
+
+/*                                               This is footer                                       */
+
+footer {
+    background-color: var(--white-blue);
+    padding: 40px 0px;
+}
+
+footer>div.container>ul {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    flex-wrap: wrap;
+    row-gap: 12px;
+}
+
+footer>div.container>ul>li {
+    font-size: var(--f-size-14px);
+    text-transform: capitalize;
+}
+
+footer>div.container>ul>li>a {
+    color: var(--black);
+}
+
+
+@media (max-width:768px) {
+    .container {
+        padding: 0px 20px;
+        width: 100%;
+    }
+
+    main>div.main-top {
+        background-color: white;
+        background-image: none;
+    }
+
+    div.tabs {
+        flex-direction: column-reverse;
+    }
+
+    main>div.main-top div.container ul.buttom-list li div.down-value span {
+        display: none;
+    }
+
+    main>div.main-top div.container ul.buttom-list li div.up-value span {
+        display: none;
+    }
+
+    main>div.main-top div.container ul.buttom-list li div.down-aerow-wraper {
+        width: auto;
+        height: auto;
+        padding: 4px 8px;
+        border-radius: 5px;
+    }
+
+    main>div.main-top div.container ul.buttom-list li div.up-aerow-wraper {
+        width: auto;
+        height: auto;
+        padding: 4px 8px;
+        border-radius: 5px;
+    }
+
+    main>div.main-top div.container ul.buttom-list li div.text span {
+        font-size: var(--f-size-12px);
+        margin-bottom: 4px;
+    }
+
+    main>div.main-top div.container ul.buttom-list li {
+        border: none;
+    }
+
+    main>div.main-top div.container ul.buttom-list li div.up-aerow-wraper span.value {
+        display: block;
+        margin-left: 5px;
+    }
+
+    main>div.main-top div.container ul.buttom-list li div.down-aerow-wraper span.value {
+        display: block;
+        margin-left: 5px;
+    }
+
+    main>div.main-top div.container ul.top-list li span {
+        font-weight: 600;
+    }
+
+    main>div.main-top div.container ul.top-list li:nth-child(1) span {
+        font-size: var(--f-size-12px);
+    }
+
+    main>div.main-top div.container ul.buttom-list {
+        padding: 0px 0px 30px 0px;
+    }
+
+    main>div.main-top div.container div.search-bar {
+        width: 100%;
+        margin: 0;
+    }
+
+    section.section-one div.container {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    section.section-one div.container div.left-child div.left-child-top>div div:nth-child(2) span:nth-child(2) {
+        display: none;
+    }
+
+    section.section-one div.container div.left-child div.left-child-top>div div:nth-child(2) span:first-of-type {
+        margin-right: 8px;
+    }
+
+    section.section-one div.container div.left-child div.left-child-top>div div:nth-child(2) span:nth-child(3) {
+        margin-right: 8px;
+    }
+
+    section.section-one div.container div.left-child div.left-child-top>h3 {
+        font-size: var(--f-size-18px);
+    }
+
+    section.section-one div.container div.left-child div.left-child-top>div div span:nth-child(2) {
+        font-weight: normal;
+    }
+
+    section.section-one div.container div.left-child div.left-child-top>div div:first-of-type {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 6px;
+    }
+
+    section.section-one div.container div.left-child div.left-child-watch-list>h4 {
+        font-weight: 500;
+        font-size: var(--f-size-12px);
+    }
+
+    section.section-one div.container div.left-child div.left-child-news>h3 {
+        font-size: var(--f-size-18px);
+    }
+
+    section.section-one div.container div.left-child div.left-child-news div.news-post div.image-wraper {
+        /* width: 92px; */
+        height: 92px;
+        margin-left: 16px;
+    }
+
+    section.section-one div.container div.right-child {
+        width: 100%;
+    }
+
+    section.section-one div.container div.right-child>div.new-portfolio {
+        display: none;
+    }
+
+    section.section-one div.container div.right-child>div {
+        border: none;
+        padding: 0;
+    }
+
+    section.section-one div.container div.right-child div.market-trends>h3 {
+        font-size: var(--f-size-18px);
+    }
+
+    section.section-one div.container div.right-child div.market-trends>div {
+        display: flex;
+        column-gap: 6px;
+        overflow-x: scroll;
+    }
+    section.section-one div.container div.right-child div.market-trends>div::-webkit-scrollbar{
+        display: none;
+    }
+    section.section-one div.container div.right-child div.market-trends>div>div a {
+        font-size: var(--f-size-12px);
+        padding: 6px 10px;
+    }
+
+    section.section-one div.container div.right-child div.earning-calender h3 {
+        font-size: var(--f-size-18px);
+    }
+
+    section.section-one div.container div.right-child div.earning-calender h3:nth-child(2) {
+        font-size: var(--f-size-14px);
+    }
+
+    section.section-one div.container div.right-child div.popular>h3 {
+        font-size: var(--f-size-18px);
+    }
+
+    section.section-one div.container div.right-child div.popular>div>div:nth-child(1) span:nth-child(3) {
+        font-size: var(--f-size-12px);
+    }
+
+    section.market-trends div.container>h3 {
+        font-size: var(--f-size-18px);
+    }
+
+    section.market-trends div.container>div>a {
+        display: none;
+    }
+
+    section.market-trends div.container>div>div.mid-child {
+        display: none;
+    }
+
+    section.market-trends div.container>div>div.first-child {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 6px;
+    }
+
+    section.market-trends div.container>div>div.first-child>span:nth-child(2) {
+        font-weight: 500;
+        font-size: var(--f-size-12px);
+    }
+
+    section.market-trends div.container>div>div.first-child>span:nth-child(1) {
+        font-size: var(--f-size-12px);
+    }
+
+    section.discover-more div.container>h3 {
+        font-size: var(--f-size-18px);
+    }
+
+    section.discover-more div.container div.cards-wraper div.cards-row>div>span:nth-child(1) {
+        font-size: var(--f-size-12px);
+    }
+    section.market-trends div.container>div>div.last-child>span:nth-child(1){
+        margin-right: 8px;
+    }
+    section.market-trends div.container>div>div.last-child>div{
+        margin-right: 8px;
+    }
+}
